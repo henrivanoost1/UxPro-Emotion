@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Emotiedetectie</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+      $(function() {
+        $('a#test').on('click', function(e) {
+          e.preventDefault()
+          $.getJSON('/background_process_test',
+              function(data) {
+            //do nothing
+          });
+          return false;
+        });
+      });
+</script>
+  </head>
+  <body>
+    <img
+      id="bg"
+      width="800px"
+      height="640px"
+      src="{{ url_for('video_feed_test') }}"
+    />
+    <a href=# id=test><button class='btn btn-default'>Test</button></a>
+  </body>
+</html>
