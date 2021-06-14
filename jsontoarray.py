@@ -30,7 +30,31 @@ with open("test1.json", 'r+') as file:
     # array_values5=array_values5.replace("'","")
     array_values5= array_values5.split(",")
     
-    print(array_values5)
+    # print(array_values5)
+    array_values_correction=[]
+    array_keys_correction=[]
+
+    for i in range(len(array_values5)):
+        if i==0:
+            # new_time=array_keys5[i]-array_keys5[0]
+            new_time=0
+            new_emotion= array_values5[i]
+            array_values_correction.append(new_emotion)
+            array_keys_correction.append(new_time)
+            
+        if i>1:
+            if array_values5[i]!=array_values5[i-1]:
+                new_time=float(array_keys5[i])-float(array_keys5[0])
+                new_emotion= array_values5[i]
+                array_values_correction.append(new_emotion)
+                array_keys_correction.append(new_time)
+            
+            else:
+                pass
+    print(array_keys_correction)
+    print(array_values_correction)
+    time= float(array_keys5[len(array_keys5)-1])-float(array_keys5[0])
+    print(time)
       
     # print(array_keys)
     # print(array_keys4)

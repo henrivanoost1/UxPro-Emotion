@@ -29,10 +29,10 @@ for i in range(num_files):
 #     height, width, layers = img.shape
 #     size = (width,height)
 #     img_array.append(img)
+  
+
  
- 
- 
-out = cv2.VideoWriter('project1.mp4',cv2.VideoWriter_fourcc(*'MP4V'), 8.071284370761148, size)
+out = cv2.VideoWriter('project5.webm',cv2.VideoWriter_fourcc(*'VP90'), 5.844723165033935, size)
  
 for i in range(len(img_array)):
     out.write(img_array[i])

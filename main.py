@@ -9,7 +9,7 @@ import os
 start_time=""
 end_time=""
 
-app = Flask(__name__, static_folder='videos')
+app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def index():
@@ -56,7 +56,8 @@ def gen(camera):
 
 @app.route('/video')
 def video():
-    return render_template('video.html')
+    example_embed='<a href="www.google.be">This string is from python</a>'
+    return render_template('video.html', embed=example_embed)
 
 # @app.route('/videoframe')
 # def video():

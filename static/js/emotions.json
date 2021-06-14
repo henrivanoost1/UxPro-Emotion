@@ -1,0 +1,29 @@
+{
+    "Emotions": [
+        {
+            "StartTime": "01",
+            "EndTime": "05",
+            "Emotion": "Angry"
+        },
+        {
+            "StartTime": "05",
+            "EndTime": "13",
+            "Emotion": "Happy"
+        },
+        {
+            "StartTime": "13",
+            "EndTime": "15",
+            "Emotion": "Sad"
+        },
+        {
+            "StartTime": "15",
+            "EndTime": "60",
+            "Emotion": "Neutral"
+        },
+        {
+            "StartTime": "13",
+            "EndTime": "15",
+            "Emotion": "Sad"
+        }
+    ]
+}
