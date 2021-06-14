@@ -23,3 +23,9 @@ class FacialExpressionModel(object):
         # dict_full[]
         print(FacialExpressionModel.EMOTIONS_LIST[np.argmax(self.preds)])
         return FacialExpressionModel.EMOTIONS_LIST[np.argmax(self.preds)]
+
+    def percentage_emotion(self, img):
+        self.preds = self.loaded_model.predict(img)
+        
+        
+        return self.preds
