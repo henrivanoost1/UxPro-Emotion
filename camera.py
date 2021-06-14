@@ -3,11 +3,15 @@ from model import FacialExpressionModel
 import numpy as np
 from moviepy.editor import VideoFileClip
 import os
+import time
+import json
 
 
 facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 model = FacialExpressionModel("model.json", "model_weights.h5")
 font = cv2.FONT_HERSHEY_PLAIN
+timet= time
+jsontest= json
 
 class VideoCamera(object):
     def __init__(self):
@@ -29,15 +33,32 @@ class VideoCamera(object):
         counter=0
         counter=counter+1
         path= "images"
+        
+        
+        
 
         for (x, y, w, h) in faces:
             fc = gray_fr[y:y+h, x:x+w]
 
             roi = cv2.resize(fc, (48, 48))
             pred = model.predict_emotion(roi[np.newaxis, :, :, np.newaxis])
-
+            time= timet.time()
             cv2.putText(fr, pred, (x+(w//3), y-5), font, 5, (0, 0, 255), 2)
             cv2.rectangle(fr,(x,y),(x+w,y+h),(255,0,0),2)
+            y={str(time):str(pred)}
+            with open("test1.json",'r+') as file:
+            # First we load existing data into a dict.
+                file_data = json.load(file)
+                # Join new_dat3a with file_data
+                file_data.update(y)
+                # Sets file's current position at offset.
+                file.seek(0)
+                # convert back to json.
+                json.dump(file_data, file, indent = 4)
+            
+
+
+            
 
         # _, jpeg = cv2.imencode('.jpg', fr)
 

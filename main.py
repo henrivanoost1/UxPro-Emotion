@@ -9,7 +9,7 @@ import os
 start_time=""
 end_time=""
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='videos')
 
 @app.route('/')
 def index():
@@ -54,7 +54,15 @@ def gen(camera):
             b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
 
-    
+@app.route('/video')
+def video():
+    return render_template('video.html')
+
+# @app.route('/videoframe')
+# def video():
+#     return render_template('video.html')
+
+
 
 @app.route('/video_feed_test')
 def video_feed_test():

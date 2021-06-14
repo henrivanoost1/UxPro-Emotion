@@ -32,7 +32,7 @@ for i in range(num_files):
  
  
  
-out = cv2.VideoWriter('project.mp4',cv2.VideoWriter_fourcc(*'MP4V'), 8.071284370761148, size)
+out = cv2.VideoWriter('project1.mp4',cv2.VideoWriter_fourcc(*'MP4V'), 8.071284370761148, size)
  
 for i in range(len(img_array)):
     out.write(img_array[i])
