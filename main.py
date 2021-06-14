@@ -16,8 +16,8 @@ def index():
     return render_template('index.html')
 
 def gen(camera):
-    length_video=camera.get_length()
-    print(length_video)
+    # length_video=camera.get_length()
+    # print(length_video)
     start_time=time.time()
     array_first_time=[]
     my_dict = {"emotion":[],"start_time":[],"end_time":[]}
@@ -39,17 +39,17 @@ def gen(camera):
         frame= jpeg.tobytes()
 
         
-        array_first_time.append(end_time)
-        end_time_correction=array_first_time[0]
-        correction=end_time_correction-start_time
-        time_duration= end_time-start_time
-        final_time= time_duration-correction
+        # array_first_time.append(end_time)
+        # end_time_correction=array_first_time[0]
+        # correction=end_time_correction-start_time
+        # time_duration= end_time-start_time
+        # final_time= time_duration-correction
 
-        convert_time= array_first_time[len(array_first_time)-1] - array_first_time[0]
+        # convert_time= array_first_time[len(array_first_time)-1] - array_first_time[0]
         
-        print(f"tijd: {time_duration}")
-        print(f"final time: {final_time}")
-        print(f"tijd voor converting: {convert_time}")
+        # print(f"tijd: {time_duration}")
+        # print(f"final time: {final_time}")
+        # print(f"tijd voor converting: {convert_time}")
         yield (b'--frame\r\n'
             b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
@@ -58,6 +58,49 @@ def gen(camera):
 def video():
     example_embed='<a href="www.google.be">This string is from python</a>'
     return render_template('video.html', embed=example_embed)
+
+@app.route('/videosave')
+def videosave():
+    img_array = []
+    array_filename=[]
+
+
+    path = 'images'
+    num_files = len([f for f in os.listdir(path)if os.path.isfile(os.path.join(path, f))])
+
+
+
+    for i in range(num_files):
+        i=i+1
+        filename=f"images/img{i}.jpg"
+        img = cv2.imread(filename)
+        array_filename.append(filename)
+    
+        height, width, layers = img.shape
+        size = (width,height)
+        img_array.append(img)
+
+    # for filename in glob.glob(f'images/*[0-{num_files}].jpg'):
+    #     img = cv2.imread(filename)
+    #     array_filename.append(filename)
+    
+    #     height, width, layers = img.shape
+    #     size = (width,height)
+    #     img_array.append(img)
+
+    DIR="static/videos"
+    
+
+
+    count= len([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])+1
+
+    
+    out = cv2.VideoWriter(os.path.join("static/videos",f'project{count}.webm'),cv2.VideoWriter_fourcc(*'VP90'), 5.844723165033935, size)
+    
+    for i in range(len(img_array)):
+        out.write(img_array[i])
+    out.release()
+    return render_template('video.html')
 
 # @app.route('/videoframe')
 # def video():

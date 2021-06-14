@@ -2,28 +2,26 @@
   <head>
     <title>Emotiedetectie</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type=text/javascript>
-      $(function() {
-        $('a#test').on('click', function(e) {
-          e.preventDefault()
-          $.getJSON('/background_process_test',
-              function(data) {
-            //do nothing
-          });
-          return false;
-        });
-      });
-</script>
+    <script type="text/javascript">
+      function picture() {
+        var pic = "{{ url_for('video_feed_test') }}";
+        document.getElementById("bg").src = pic.replace("90x90", "225x225");
+        document.getElementById("bg").style.display = "block";
+      }
+
+      function pictureStop() {
+        var pic = "";
+        document.getElementById("bg").src = pic.replace("225x225", "90x90");
+        document.getElementById("bg").style.display = "none";
+      }
+    </script>
   </head>
   <body>
-    <img
-      id="bg"
-      width="800px"
-      height="640px"
-      src="{{ url_for('video_feed_test') }}"
-    />
-    <form action="video.html">
-    <input type="submit">Test</input>
-  </form>
+    <button onclick="picture()">Start</button>
+    <button onclick="pictureStop()">Stop</button>
+    <form action="{{ url_for('videosave') }}">
+      <input type="submit" value="Save" />
+    </form>
+    <img id="bg" width="800px" height="640px" src="" style="display: none" />
   </body>
 </html>
