@@ -23,6 +23,7 @@ def gen(camera):
     my_dict = {"emotion":[],"start_time":[],"end_time":[]}
     counter=0
     # camera.make_video()
+    #jkk
     
     while True:
         
