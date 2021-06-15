@@ -1,0 +1,232 @@
+[
+    {
+        "StartTime": "00:00:00",
+        "EndTime": "00:00:03",
+        "Emotion": "Neutral"
+    },
+    {
+        "StartTime": "00:00:03",
+        "EndTime": "00:00:03",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:03",
+        "EndTime": "00:00:05",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:05",
+        "EndTime": "00:00:05",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:05",
+        "EndTime": "00:00:06",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:06",
+        "EndTime": "00:00:06",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:06",
+        "EndTime": "00:00:07",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:07",
+        "EndTime": "00:00:08",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:08",
+        "EndTime": "00:00:08",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:08",
+        "EndTime": "00:00:08",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:08",
+        "EndTime": "00:00:08",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:08",
+        "EndTime": "00:00:09",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:09",
+        "EndTime": "00:00:09",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:09",
+        "EndTime": "00:00:10",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:10",
+        "EndTime": "00:00:10",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:10",
+        "EndTime": "00:00:10",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:10",
+        "EndTime": "00:00:11",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:11",
+        "EndTime": "00:00:11",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:11",
+        "EndTime": "00:00:12",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:12",
+        "EndTime": "00:00:12",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:12",
+        "EndTime": "00:00:12",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:12",
+        "EndTime": "00:00:12",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:12",
+        "EndTime": "00:00:12",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:12",
+        "EndTime": "00:00:13",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:13",
+        "EndTime": "00:00:13",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:13",
+        "EndTime": "00:00:13",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:13",
+        "EndTime": "00:00:13",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:13",
+        "EndTime": "00:00:14",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:14",
+        "EndTime": "00:00:14",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:14",
+        "EndTime": "00:00:14",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:14",
+        "EndTime": "00:00:14",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:14",
+        "EndTime": "00:00:18",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:18",
+        "EndTime": "00:00:19",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:19",
+        "EndTime": "00:00:21",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:21",
+        "EndTime": "00:00:23",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:23",
+        "EndTime": "00:00:25",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:25",
+        "EndTime": "00:00:25",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:25",
+        "EndTime": "00:00:26",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:26",
+        "EndTime": "00:00:26",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:26",
+        "EndTime": "00:00:26",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:26",
+        "EndTime": "00:00:26",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:26",
+        "EndTime": "00:00:26",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:26",
+        "EndTime": "00:00:32",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:32",
+        "EndTime": "00:00:32",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:32",
+        "EndTime": "00:00:33",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:33",
+        "EndTime": "00:00:33",
+        "Emotion": " Neutral"
+    }
+]

@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function(){
-    console.log("test1")
-    fetch("{{ url_for('static',filename='js/emotions.json) }}")
+    // console.log("test11")
+    fetch("static/data/data1.json")
     .then(response => response.json())
     .then(json => {
-        console.log('test')
+        // console.log('test')
         console.log(json)
+        console.log("lengte: "+json.length)
     
-        StartTime = json.Emotions[0].StartTime
-        EndTime = json.Emotions[0].EndTime
-        emotion = json.Emotions[0].Emotion
+        StartTime = json[0].StartTime
+        EndTime = json[0].EndTime
+        emotion = json[0].Emotion
+        
         
         console.log(StartTime, EndTime)
         console.log(emotion)
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let classSessions = document.querySelector(".sessions");
         let classSessionsHTML = "";
     
-        json.Emotions.map((session) => {
+        json.map((session) => {
             console.log(session)
             classSessionsHTML += 
                 `<li>

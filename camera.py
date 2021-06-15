@@ -1,5 +1,7 @@
+
 import cv2
 from numpy.core.numeric import full
+from numpy.core.records import array
 from model import FacialExpressionModel
 import numpy as np
 from moviepy.editor import VideoFileClip
@@ -34,7 +36,7 @@ class VideoCamera(object):
         counter=0
         counter=counter+1
         path= "images"
-        
+        img = cv2.imread('emotions\\neutral.png')
         
         
 
@@ -47,6 +49,19 @@ class VideoCamera(object):
             cv2.putText(fr, pred, (x+(w//3), y-5), font, 5, (0, 0, 255), 2)
             
             
+            if pred == 'Angry':
+                img = cv2.imread('emotions\\angry.png')
+            elif pred == 'Disgust':
+                img = cv2.imread('emotions\\disgusted.png')
+            elif pred == 'Happy':
+                img = cv2.imread('emotions\\happy.png')
+            elif pred == 'Neutral':
+                img = cv2.imread('emotions\\neutral.png')
+            elif pred == 'Sad':
+                img = cv2.imread('emotions\\sad.png')
+            
+
+
 
             percentage = model.percentage_emotion(roi[np.newaxis, :, :, np.newaxis])
             
@@ -99,13 +114,19 @@ class VideoCamera(object):
                 counter_position += 30
                 counter_percentage += 1
 
+                
+
             
+            path_data="last_data"
+            count_json= len([name for name in os.listdir(path_data) if os.path.isfile(os.path.join(path_data, name))])
             
+        
+
 
 
             cv2.rectangle(fr,(x,y),(x+w,y+h),(255,0,0),2)
             y={str(time):str(pred)}
-            with open("test1.json",'r+') as file:
+            with open(f"last_data/last_data{count_json}.json",'r+') as file:
             # First we load existing data into a dict.
                 file_data = json.load(file)
                 # Join new_dat3a with file_data
@@ -118,10 +139,19 @@ class VideoCamera(object):
 
 
             
-
+        
         # _, jpeg = cv2.imencode('.jpg', fr)
 
         # cv2.imwrite(os.path.join(path, "img"+str(counter)+".jpg"),fr)
+        try:
+            img_height, img_width, _ = img.shape
+            x = 515
+            y = 5
+            fr[ y:y+img_height , x:x+img_width ] = img
+        except AttributeError:
+            print("shape not found")
+            #code to move to next frame
+            
         return fr
     
     def get_length(self):

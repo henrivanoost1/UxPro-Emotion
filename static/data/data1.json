@@ -1,0 +1,117 @@
+[
+    {
+        "StartTime": "00:00:00",
+        "EndTime": "00:00:02",
+        "Emotion": "Neutral"
+    },
+    {
+        "StartTime": "00:00:02",
+        "EndTime": "00:00:03",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:03",
+        "EndTime": "00:00:04",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:04",
+        "EndTime": "00:00:07",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "00:00:07",
+        "EndTime": "00:00:07",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:07",
+        "EndTime": "00:00:07",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:07",
+        "EndTime": "00:00:08",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:08",
+        "EndTime": "00:00:08",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:08",
+        "EndTime": "00:00:09",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:09",
+        "EndTime": "00:00:09",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:09",
+        "EndTime": "00:00:09",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:09",
+        "EndTime": "00:00:10",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:10",
+        "EndTime": "00:00:11",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:11",
+        "EndTime": "00:00:15",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:15",
+        "EndTime": "00:00:16",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "00:00:16",
+        "EndTime": "00:00:17",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:17",
+        "EndTime": "00:00:17",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "00:00:17",
+        "EndTime": "00:00:18",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:18",
+        "EndTime": "00:00:18",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "00:00:18",
+        "EndTime": "00:00:18",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:18",
+        "EndTime": "00:00:19",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "00:00:19",
+        "EndTime": "00:00:19",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "00:00:19",
+        "EndTime": "00:00:19",
+        "Emotion": " Neutral"
+    }
+]
