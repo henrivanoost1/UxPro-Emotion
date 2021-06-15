@@ -13,8 +13,8 @@ li {
   overflow-y: scroll;
 }
 body {
-  /* background: linear-gradient(45deg, #1e0087, #1ed2ff); */
-  background: #300999;
+  background: white;
+  /* background: #300999; */
   overflow: hidden;
 }
 video {
