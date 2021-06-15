@@ -1,5 +1,6 @@
 import cv2
 from numpy.core.numeric import full
+from numpy.core.records import array
 from model import FacialExpressionModel
 import numpy as np
 from moviepy.editor import VideoFileClip
@@ -100,12 +101,16 @@ class VideoCamera(object):
                 counter_percentage += 1
 
             
+            path_data="last_data"
+            count_json= len([name for name in os.listdir(path_data) if os.path.isfile(os.path.join(path_data, name))])
             
+        
+
 
 
             cv2.rectangle(fr,(x,y),(x+w,y+h),(255,0,0),2)
             y={str(time):str(pred)}
-            with open("test1.json",'r+') as file:
+            with open(f"last_data/last_data{count_json}.json",'r+') as file:
             # First we load existing data into a dict.
                 file_data = json.load(file)
                 # Join new_dat3a with file_data
