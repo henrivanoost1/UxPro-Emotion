@@ -1,8 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
     // console.log("test11")
-    fetch("static/data/data1.json")
+    var aantal=1;
+    fetch("static/js/aantal.json")
+    .then(response=>response.json())
+    .then(json=>{
+        aantal= json[0]
+        console.log("aantal bestanden in dinges"+String(aantal))
+    
+
+    fetch("static/data/data"+String(aantal)+".json")
     .then(response => response.json())
     .then(json => {
+
+        document.getElementById("video_emotion").src="{{ url_for('static',filename='videos/project7.webm') }}"
+
+        
+
         // console.log('test')
         console.log(json)
         console.log("lengte: "+json.length)
@@ -33,4 +46,5 @@ document.addEventListener("DOMContentLoaded", function(){
     
         
     }); 
+});
 })

@@ -260,6 +260,12 @@ def videosave():
         #     # file_data.update(list_moments)
         #     # file.seek(0)
         #     json.dump(list_moments,file,indent=4)
+
+        with open(os.path.join("static/js","aantal.json"),"w") as file:
+            path_data="static/data"
+            count_json= len([name for name in os.listdir(path_data) if os.path.isfile(os.path.join(path_data, name))])
+            text=[count_json]
+            json.dump(text,file)
         
         
 
