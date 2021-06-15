@@ -1,3 +1,4 @@
+
 import cv2
 from numpy.core.numeric import full
 from model import FacialExpressionModel
@@ -34,7 +35,7 @@ class VideoCamera(object):
         counter=0
         counter=counter+1
         path= "images"
-        
+        img = cv2.imread('emotions\\neutral.png')
         
         
 
@@ -47,6 +48,19 @@ class VideoCamera(object):
             cv2.putText(fr, pred, (x+(w//3), y-5), font, 5, (0, 0, 255), 2)
             
             
+            if pred == 'Angry':
+                img = cv2.imread('emotions\\angry.png')
+            elif pred == 'Disgust':
+                img = cv2.imread('emotions\\disgusted.png')
+            elif pred == 'Happy':
+                img = cv2.imread('emotions\\happy.png')
+            elif pred == 'Neutral':
+                img = cv2.imread('emotions\\neutral.png')
+            elif pred == 'Sad':
+                img = cv2.imread('emotions\\sad.png')
+            
+
+
 
             percentage = model.percentage_emotion(roi[np.newaxis, :, :, np.newaxis])
             
@@ -99,6 +113,8 @@ class VideoCamera(object):
                 counter_position += 30
                 counter_percentage += 1
 
+                
+
             
             
 
@@ -118,10 +134,19 @@ class VideoCamera(object):
 
 
             
-
+        
         # _, jpeg = cv2.imencode('.jpg', fr)
 
         # cv2.imwrite(os.path.join(path, "img"+str(counter)+".jpg"),fr)
+        try:
+            img_height, img_width, _ = img.shape
+            x = 515
+            y = 5
+            fr[ y:y+img_height , x:x+img_width ] = img
+        except AttributeError:
+            print("shape not found")
+            #code to move to next frame
+            
         return fr
     
     def get_length(self):
