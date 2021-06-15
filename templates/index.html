@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Emotiedetectie</title>
+    <link rel="stylesheet" href="static\css\screen.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
       function picture() {
@@ -17,10 +18,10 @@
     </script>
   </head>
   <body>
-    <button onclick="picture()">Start</button>
-    <button onclick="pictureStop()">Stop</button>
+    <button class="btnDesign" onclick="picture()">Start</button>
+    <button class="btnDesign" onclick="pictureStop()">Stop</button>
     <form action="{{ url_for('videosave') }}">
-      <input type="submit" value="Save" />
+      <input class="btnDesign" type="submit" value="Save" />
     </form>
     <img id="bg" width="800px" height="640px" src="" style="display: none" />
   </body>
