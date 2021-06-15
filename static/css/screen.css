@@ -20,6 +20,9 @@ body {
 video {
   height: 60vh;
 }
+#bg {
+  height: 60vh;
+}
 .containerLogo {
   display: flex;
 
