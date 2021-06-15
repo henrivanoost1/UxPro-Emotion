@@ -36,7 +36,7 @@ class VideoCamera(object):
         counter=0
         counter=counter+1
         path= "images"
-        img = cv2.imread('emotions\\neutral.png')
+        img = cv2.imread('emotions\\empty.png')
         
         
 

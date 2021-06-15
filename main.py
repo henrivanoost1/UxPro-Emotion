@@ -175,7 +175,7 @@ def videosave():
             if i==0:
                 # new_time=array_keys5[i]-array_keys5[0]
                 new_time=0
-                new_time=time.strftime('%H:%M:%S', time.gmtime(new_time))
+                # new_time=time.strftime('%H:%M:%S', time.gmtime(new_time))
 
                 new_emotion= array_values5[i]
                 array_values_correction.append(new_emotion)
@@ -184,7 +184,7 @@ def videosave():
             if i>1:
                 if array_values5[i]!=array_values5[i-1]:
                     new_time=float(array_keys5[i])-float(array_keys5[0])
-                    new_time=time.strftime('%H:%M:%S', time.gmtime(new_time))
+                    # new_time=time.strftime('%H:%M:%S', time.gmtime(new_time))
                     new_emotion= array_values5[i]
                     array_values_correction.append(new_emotion)
                     array_keys_correction.append(new_time)
