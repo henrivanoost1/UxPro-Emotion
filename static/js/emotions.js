@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-    console.log("test1")
-    fetch("{{ url_for('static',filename='js/emotions.json) }}")
+    console.log("test11")
+    fetch("static/js/emotions.json")
     .then(response => response.json())
     .then(json => {
         console.log('test')
