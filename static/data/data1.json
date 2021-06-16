@@ -1,0 +1,177 @@
+[
+    {
+        "StartTime": "0",
+        "EndTime": "0.2380361557006836",
+        "Emotion": "Neutral"
+    },
+    {
+        "StartTime": "0.2380361557006836",
+        "EndTime": "0.4680013656616211",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "0.4680013656616211",
+        "EndTime": "0.594001293182373",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "0.594001293182373",
+        "EndTime": "0.6850357055664062",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "0.6850357055664062",
+        "EndTime": "0.8187425136566162",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "0.8187425136566162",
+        "EndTime": "1.608323097229004",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "1.608323097229004",
+        "EndTime": "2.023376226425171",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "2.023376226425171",
+        "EndTime": "2.4038338661193848",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "2.4038338661193848",
+        "EndTime": "3.196321964263916",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "3.196321964263916",
+        "EndTime": "3.3409178256988525",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "3.3409178256988525",
+        "EndTime": "3.488950729370117",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "3.488950729370117",
+        "EndTime": "4.210580110549927",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "4.210580110549927",
+        "EndTime": "6.5083253383636475",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "6.5083253383636475",
+        "EndTime": "6.8133485317230225",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "6.8133485317230225",
+        "EndTime": "9.23499846458435",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "9.23499846458435",
+        "EndTime": "9.339959621429443",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "9.339959621429443",
+        "EndTime": "11.85882830619812",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "11.85882830619812",
+        "EndTime": "13.009140729904175",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "13.009140729904175",
+        "EndTime": "14.43524956703186",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "14.43524956703186",
+        "EndTime": "16.329270839691162",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "16.329270839691162",
+        "EndTime": "16.92726993560791",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "16.92726993560791",
+        "EndTime": "17.025269746780396",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "17.025269746780396",
+        "EndTime": "19.46028971672058",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "19.46028971672058",
+        "EndTime": "19.561289072036743",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "19.561289072036743",
+        "EndTime": "21.980435132980347",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "21.980435132980347",
+        "EndTime": "22.76374578475952",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "22.76374578475952",
+        "EndTime": "22.895745038986206",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "22.895745038986206",
+        "EndTime": "23.277032136917114",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "23.277032136917114",
+        "EndTime": "23.409699201583862",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "23.409699201583862",
+        "EndTime": "23.542699575424194",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "23.542699575424194",
+        "EndTime": "23.82775855064392",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "23.82775855064392",
+        "EndTime": "24.092732429504395",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "24.092732429504395",
+        "EndTime": "24.482435703277588",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "24.482435703277588",
+        "EndTime": "24.57439398765564",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "24.57439398765564",
+        "EndTime": "24.57439398765564",
+        "Emotion": " Neutral"
+    }
+]

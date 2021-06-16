@@ -1,0 +1,57 @@
+[
+    {
+        "StartTime": "0",
+        "EndTime": "5.742307424545288",
+        "Emotion": "Neutral"
+    },
+    {
+        "StartTime": "5.742307424545288",
+        "EndTime": "6.128306150436401",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "6.128306150436401",
+        "EndTime": "6.4073100090026855",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "6.4073100090026855",
+        "EndTime": "7.970079660415649",
+        "Emotion": " Happy"
+    },
+    {
+        "StartTime": "7.970079660415649",
+        "EndTime": "8.20659351348877",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "8.20659351348877",
+        "EndTime": "8.344592809677124",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "8.344592809677124",
+        "EndTime": "8.49259352684021",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "8.49259352684021",
+        "EndTime": "8.599593877792358",
+        "Emotion": " Sad"
+    },
+    {
+        "StartTime": "8.599593877792358",
+        "EndTime": "16.013594150543213",
+        "Emotion": " Neutral"
+    },
+    {
+        "StartTime": "16.013594150543213",
+        "EndTime": "16.156598567962646",
+        "Emotion": " Angry"
+    },
+    {
+        "StartTime": "16.156598567962646",
+        "EndTime": "16.156598567962646",
+        "Emotion": " Neutral"
+    }
+]
