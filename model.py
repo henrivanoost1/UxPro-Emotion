@@ -16,16 +16,11 @@ class FacialExpressionModel(object):
             self.loaded_model = model_from_json(loaded_model_json)
 
         self.loaded_model.load_weights(model_weights_file)
-        # self.loaded_model._make_predict_function()
     def predict_emotion(self, img):
         self.preds = self.loaded_model.predict(img)
-        dict_full={}
-        # dict_full[]
         print(FacialExpressionModel.EMOTIONS_LIST[np.argmax(self.preds)])
         return FacialExpressionModel.EMOTIONS_LIST[np.argmax(self.preds)]
 
     def percentage_emotion(self, img):
-        self.preds = self.loaded_model.predict(img)
-        
-        
+        self.preds = self.loaded_model.predict(img)   
         return self.preds

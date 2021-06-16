@@ -30,24 +30,6 @@
     <meta name="theme-color" content="#ffffff" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{{ url_for('static',filename='js/emotions.js') }}"></script>
-    <script type="text/javascript">
-      var path = "static\\videos";
-
-      function ShowFolderFileList() {
-        var fso, f, fc, s, temp;
-        fso = new ActiveXObject("Scripting.FileSystemObject");
-        f = fso.GetFolder(path);
-        fc = new Enumerator(f.files);
-        s = "";
-        temp = "";
-        for (; !fc.atEnd(); fc.moveNext()) {
-          temp = fc.item();
-          document.getElementById("filelist").options[
-            document.getElementById("filelist").options.length
-          ] = new Option(temp, temp); // First value is the TEXT of the option, the second is the VALUE of the option.
-        }
-      }
-    </script>
   </head>
   <body>
     <div class="containerLogo">
@@ -84,15 +66,7 @@
       <h1 class="heading">Emotiondetection</h1>
     </div>
     <div class="wrap">
-      <div id="video_emotion" class="boxvideo video">
-        <!-- <input type="button" onclick="ShowFolderFileList()" value="TEST" />
-        <select id="filelist"></select> -->
-        <!-- <video id="video_emotion" controls>
-        <source id="video_emotion" src="" type="video/webm" />
-        </video> -->
-        <!-- <p id="embed">{{embed}}</p> -->
-      </div>
-
+      <div id="video_emotion" class="boxvideo video"></div>
       <div class="box">
         <div class="container">
           <div class="wrapper">
